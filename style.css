@@ -8,7 +8,7 @@ body {
   align-items: center;      /* center vertical */
 }
 
-/* Container default: 1 row 3 kolom */
+/* Container horizontal */
 .pricing-container {
   display: flex;
   gap: 20px; /* jarak antar card */
@@ -56,13 +56,4 @@ body {
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-/* ======== Tambahan penting ======== */
-/* Ketika layar ≤ 900px, stack vertikal */
-@media (max-width: 900px) {
-  .pricing-container {
-    flex-direction: column;    /* ubah jadi 1 kolom */
-    align-items: center;       /* center tiap card */
-  }
 }
