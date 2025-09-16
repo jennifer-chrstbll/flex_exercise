@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffb7d4; /* abu-abu muda background */
+  background-color: #ffb7d4; 
   margin: 0;
-  height: 100vh; /* penuh tinggi layar */
+  height: 100vh;
   display: flex;
   justify-content: center;  /* center horizontal */
   align-items: center;      /* center vertical */
@@ -11,7 +11,7 @@ body {
 /* Container default: 1 row 3 kolom */
 .pricing-container {
   display: flex;
-  gap: 20px; /* jarak antar card */
+  gap: 20px; 
 }
 
 /* Card */
@@ -57,8 +57,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
-/* ======== Tambahan penting ======== */
 /* Ketika layar ≤ 900px, stack vertikal */
 @media (max-width: 900px) {
   .pricing-container {
