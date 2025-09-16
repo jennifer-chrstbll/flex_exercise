@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* abu-abu muda background */
+  background-color: #ffb7d4; /* abu-abu muda background */
   margin: 0;
   height: 100vh; /* penuh tinggi layar */
   display: flex;
@@ -8,7 +8,7 @@ body {
   align-items: center;      /* center vertical */
 }
 
-/* Container horizontal */
+/* Container default: 1 row 3 kolom */
 .pricing-container {
   display: flex;
   gap: 20px; /* jarak antar card */
@@ -50,10 +50,19 @@ body {
 
 /* Button */
 .plan-button {
-  background: orange;
+  background: rgb(255, 148, 234);
   color: white;
   border: none;
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* ======== Tambahan penting ======== */
+/* Ketika layar ≤ 900px, stack vertikal */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;    /* ubah jadi 1 kolom */
+    align-items: center;       /* center tiap card */
+  }
 }
